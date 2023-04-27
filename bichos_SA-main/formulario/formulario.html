@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <script src="cadastroAnimal.js"></script>
+
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="formul">
+        <div>
+            <h1 id ="Título">Formulário de doação</h1>
+            <p  id="Sub-Título">Complete seu cadastro:</p>
+            <br> 
+        </div>
+        <form  action="#" class="the-form" onsubmit="return cadastrarAnimal()">
+            <div class="cp">
+                <label>Coloque a especie do animal:</label>
+                <select id="animal">
+                    <option selected disabled value="">Escolha</option>
+                    <option>Cachorro</option>
+                    <option>Gato</option>
+                    <option>Passaro</option>
+                </select>
+            </div>
+
+            <fieldset class="img">
+                <div class="container">
+                <div class="wrapper">
+                    <div class="imagem">
+                        <img id="foto" src="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">Envie uma imagem do animal</div>
+                    </div>
+                    <div id="cancel-btn"><i class="fas fa-times"></i></div>
+                    <div class="file-name"></div>
+                </div>
+                <input type="file" id="file">
+                </div>
+                <br>
+            </fieldset>
+
+            <div class="cp">
+                <br>
+                <label>Nome do animal:</label>
+                <input type="text" name="NomeAnimal" id="NomeAnimal" class="padrao" required placeholder="XXXXXXXXX">
+                <label>Cidade e estado:</label>
+                <input type="text" name="localizacao" id="localizacao" class="padrao" required>
+                <label>Idade do animal:</label>
+                <input type="text" name="Idade" id="Idade" class="padrao" required placeholder="XX Anos">
+                <br>
+                <label>Uma pequena descrição do animal</label>
+                <textarea row="6" style="width: 23em" id="Resumo"  class="padrao"></textarea>
+                <br>
+                <label>Fale um pouco mais sobre seu animal:</label>
+                <textarea row="6" style="width: 23em" id="descricaoCompleta"  class="padrao"></textarea>
+            </div>
+            <button class="Botão" type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+<footer class="rodape">
+    <div class="row">
+    <div class="col-12 rodape">
+        <div class="text-center p-2" style="background-color: #175d3c ;">
+            <p class="footertext">© 2022 Copyright: Bichos S.A - <b>PUC MINAS</b>
+            </p>
+        </div>
+    </div>
+    </div>
+</footer>
+</html>
